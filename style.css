@@ -1,123 +1,150 @@
 
-header {
-	background-color: #FFDE52 ;  
+.wrapper {
+width: 1000px;
+margin: auto;
+padding: 2px;
 }
 
+.header {
+	background-color: #FDDC3F ;  
+	height: 370px;
+	width: 100%;
+	padding : 2px;
+	/*margin : auto;
+	text-align: center; */
+}
 
 h1 {
-  font-family: "Archivo black", san serif;
-  font-size: 100px;
-  color: #292929 ;
+	font-family: "Archivo black", sans-serif; 
+	font-size : 200px;
+	letter-spacing: 50px; 
+	margin: auto;
+/*	margin-bottom: -60px;
+	margin-left: -10px;
+	margin-top: 39px;*/
+/*text-align: center;*/	
+	color : #383838;
 }
 
 
 h2 {
-	font-family: "Archivo black", san serif;
-	font-size: 30 px;
-	color: #196969 ;
+	font-family: "Archivo black", sans-serif;
+	font-size: 30px;
+	color: #383838;
+	letter-spacing: 10px; 
+	margin-left: 10px;
+	margin-top: -50px;
+	/*text-align: center;*/
+	/*margin : auto;*/
+	/*display : block;*/
 }
 
-img {
-	height : 300px;
-	border-radius: 90px ;
+#lose {
+	color: #196969; 
+	font-weight: bold;
+	font-style: em; 
 }
 
 li {
-	font-family: 'Noto Sans', sans-serif; 
-	font-size : 20px ;
-	color: #196969 ;
-	list-style: none ;
-	display : inline ;
-	border-radius: 5px ; 
-	border-style: none ; 
-	background-color : #FAD62F ;
-	margin : 30px ;
-	height : 50px ;
-	width : 200px ;
-	padding : 5px ;
+	list-style : none;
+}
+
+.rubrique {
+	background-color: #196969;
+	border-radius: 5px; 
+	font-size: 14pt; 
+	letter-spacing: 2px;
+	display: inline-block;
+	/*font-family: "Noto sans", sans-serif;*/
+	font-family: "Archivo black", sans-serif;
+	color: #FDDC3F;
+	margin-right: 55px;
+	margin-left: 55px; 
+	padding: 5px;
+}
+
+img {
+	text-align: center;
+	height: 300px;
+	width: 300px;
+}
+
+.section {
+	float: left;
+	width: 65%;
+	height: 600px;
+	display: block; 
 }
 
 h3 {
-	font-family: 'Noto Sans', sans-serif ;
-	color : 617A7A ;
-	font-size: 20px; 
+	font-size : 16pt;
+	font-family: "Noto sans", sans-serif;
+	color: #196969;
+	font-weight: bolder;
 }
 
-p {
-	font-family: 'Noto Sans', sans-serif ;
-	color : 617A7A ;
-	font-size: 15px; 
+p:first-letter {
+	font-size: 30pt;
+	font-family: "Noto sans", sans-serif;
+	color: #196969;
+}
+
+art {
+	font-size: 12pt;
+	font-family: "Noto sans", sans-serif; 
 }
 
 aside {
-	float : right ; 
-	width : 25% ;
-	display : block ;
-	margin : auto ;
-	padding : 10px ;
-	text-align: center ; 
-	border : 2px, solid, black ;
-	background-color : "grey";
-
+	display: block; 
 }
 
-div {
-	border : 2px solid #617A7A ; 
-	border-radius: 5px; 
-	height : 600px ;
-	padding-top: 50px;
-	padding-bottom: 50px;
+.twitter {
+	float: right;
+	width: 25%;
+	height: 400px;
+	display: inline-block;
+	padding: 5px;
 }
 
-aside button {
-	background-color : #FAD62F; 
-	height : 40px ;
-	width : 40px ;
+.boutonsreseaux {
+	float: right;
+	width: 30%;
+	display: inline-block;
+	margin-top: 300px;
+	text-align: center;
 }
 
-section {
-	float : left ;
-	width : 70% ;
-	margin : 5px;
-	padding : 5px ;
+.devenirplaider {
+	float: right;
+	width: 25%;
+	height: 200px;
+	display: inline-block;
+	padding: 5px;
+/*	margin-top: 260px;
+*/	/*border : 1px solid #196969 ;*/
 }
 
-article {
-	height : 600px ;
+.idee {
+	float: right;
+	width: 25%;
+	height: 50px;
+	margin-top: 50px;
 }
 
-.left {
-	float : left ;
-	width : 50% ;
+.philo {
+	float: right;
+	width: 25%;
+	display: inline-block;
+	padding : 5px;
+	margin-top: 500px;
 }
 
-.right {
-	float : right ;
-	width : 50% ;
-}
-
-
-a button {
-	background-color : #196969 ;
-}
-
-a button h3 {
-	color : white ; 
-	padding : 10px ;
-	margin : auto ;
-	font-size: 10px ; 
-}
-
-a {
-	text-decoration : none ; 
-}
-
-footer {
-	clear : both ;
-	position : relative ;
-	text-align: center ; 
-}
-
-i {
-	color: #FAD62F ;
+.footer {
+	clear: both;
+	position: fixed;
+	display: block-inline;
+	background-color: #FDDC3F;
+	width: 100%;
+	height: 100px;
+	text-align: center;
 }
