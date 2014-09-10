@@ -65,15 +65,16 @@ li {
 
 img {
 	text-align: center;
-	height: 300px;
-	width: 300px;
+	height: 200px;
+	width: 200px;
 }
 
 .section {
 	float: left;
 	width: 65%;
-	height: 600px;
+	height: 1000px;
 	display: block; 
+	margin-bottom: 100px;
 }
 
 h3 {
@@ -83,34 +84,48 @@ h3 {
 	font-weight: bolder;
 }
 
-p:first-letter {
+.artimg {
+	display: inline;
+}
+
+.p1:first-letter {
 	font-size: 30pt;
 	font-family: "Noto sans", sans-serif;
 	color: #196969;
 }
 
-art {
-	font-size: 12pt;
-	font-family: "Noto sans", sans-serif; 
+p {
+	font-family: "Noto sans", sans-serif;
+	font-size: 11pt;
+	color: #383838;
+	text-align: justify; 
 }
 
-aside {
+.enmodeplaid {
+	color: #196969;
+	font-weight: bolder;
+}
+
+.colonnedroite {
 	display: block; 
+	float: right;
 }
 
 .twitter {
 	float: right;
 	width: 25%;
 	height: 400px;
-	display: inline-block;
+	display: block;
 	padding: 5px;
+	margin-top: -2206px;
+	margin-left: 400px;
 }
 
 .boutonsreseaux {
 	float: right;
-	width: 30%;
+	width: 25%;
 	display: inline-block;
-	margin-top: 300px;
+	margin-top: -1480px;
 	text-align: center;
 }
 
@@ -120,15 +135,20 @@ aside {
 	height: 200px;
 	display: inline-block;
 	padding: 5px;
-/*	margin-top: 260px;
-*/	/*border : 1px solid #196969 ;*/
+	margin-top: -1400px;
+	margin-right: 50px;
+	background-color: gray;
+	border-radius: 5px; 
 }
 
 .idee {
 	float: right;
 	width: 25%;
-	height: 50px;
-	margin-top: 50px;
+	display: block;
+	margin-top: -1150px;
+	margin-right: 50px;
+	background-color: gray;
+	border-radius: 5px;
 }
 
 .philo {
@@ -136,7 +156,10 @@ aside {
 	width: 25%;
 	display: inline-block;
 	padding : 5px;
-	margin-top: 500px;
+	margin-top: -1000px;
+	margin-right: 50px;
+	background-color: gray;
+	border-radius: 5px;
 }
 
 .footer {
