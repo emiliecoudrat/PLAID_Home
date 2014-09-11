@@ -74,9 +74,10 @@ img {
 	border: 1px solid #FDDC3F;
 }
 
-/*.borderjaune {
+.borderjaune {
 	border: 1px solid #FDDC3F;
-}*/
+	padding: 2px;
+}
 
 .section {
 
@@ -144,31 +145,49 @@ p {
 	clear: both;
 	position: fixed;
 	display: inline;
-	/*background-color: #FDDC3F;*/
+	background-color: #FDDC3F;
+	opacity: 0.8;
 	width: 100%;
-	height: 70px;
+	height: 80px;
 	bottom :0;
 }
 
 .winner {
 /*	margin-left: 35px;
-*/	background-color: #FDDC3F;
-	position: relative;
+*//*	background-color: #FDDC3F;
+	opacity: 0.8;*/
 }
 
-#winnerdit {
+#winnerdit p {
+	font-family: "Archivo black", sans-serif;
 	font-size: 20px;
 	text-align: center;
 	letter-spacing: 0px;
+	color : #686869;
 }
 
-#citation {
-	font-size: 16px;
+.citation p {
+	font-family: "Noto sans", sans-serif;
+	font-size: 18px;
 /*	text-align: : center;
 */	font-weight: bolder;
-	margin-left: 135px;
+	text-align: center;
+	color : #196969;
 }
 
 .boutonjaune {
- 	background-color: #686869; 
+ 	/*font-family: "Noto sans", sans-serif;
+	font-size: 16px;
+	color: black;*/
+	background-color: #686869; 
+ 	border : none;
+ 	text-align: center;
+ 	float: left;
+}
+
+button p {
+	color: white ;
+	font-family: "Noto sans", sans-serif;
+	font-size: 16px;
+	font-weight: bolder; 
 }
