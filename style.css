@@ -1,21 +1,13 @@
 
-/*.wrapper {
-width: 1000px;
-margin: auto;
-padding: 2px;
-}*/
-
-.container-fluid {
+.wrapper {
 background-color: #F2F2F2;
+padding-bottom: 90px;
 }
 
 .header {
-	/*background-color: #FDDC3F */;  
 	height: 370px;
 /*	width: 100%;*/
 	padding : 2px;
-	/*margin : auto;
-	text-align: center; */
 	background-image : url(img/fondheader.png);
 }
 
@@ -36,40 +28,109 @@ h2 {
 	margin-left: -69px;
 	margin-top: -26px;
 	text-align: center;
-	/*margin : auto;*/
-	/*display : block;*/
 }
 
 #lose {
 	color: #196969; 
 	font-weight: bold;
-	font-style: em; 
+	font-style: cursive; 
 }
 
 li {
 	list-style : none;
 }
 
-.rubrique {
+
+.navbar-nav>li>a {
+	padding: 15px 15px;
+	height: 50px;
+	line-height: 20px;
 	background-color: #196969;
 	border-radius: 5px; 
-	font-size: 14pt; 
 	letter-spacing: 2px;
 	display: inline-block;
-	/*font-family: "Noto sans", sans-serif;*/
-	font-family: "Archivo black", sans-serif;
-	color: #FDDC3F;
-	margin-right: 25px;
-	margin-left: 25px; 
-	margin-bottom: 25px;
-	margin-top: 35px;
-	padding: 5px;
-	text-align: : center;
 }
 
-img {
-	height: 250px;
-	width: 250px;
+.navbar-nav p {
+	color: #FDDC3F;
+	font-family: "Archivo black", sans-serif;
+	font-size: 18px;
+}
+
+.navbar-nav {
+	padding: 0;
+}
+
+.navbar-nav li {
+	margin-left: 26px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.navbar-header > a {
+	background-color: #196969;
+	border-radius: 5px; 
+}
+
+.navbar-header {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#bs-example-navbar-collapse-1 > ul > li:hover {
+	background-color: #FDDC3F;
+	border-radius: 5px;
+	font-family: "Archivo black", sans-serif;
+	font-size: 18px;
+}
+
+#bs-example-navbar-collapse-1 > ul > li:hover a p {
+	color: #686869;
+}
+ 
+ body > div > nav > nav > div > div.navbar-header:hover {
+ 	background-color: #FDDC3F;
+	border-radius: 5px;
+	font-family: "Archivo black", sans-serif;
+	font-size: 18px;
+ }
+
+.navbar-header:hover li p {
+	color: #686869;
+}
+
+.navbar-brand a {
+	border-radius: 5px; 
+	letter-spacing: 2px;
+	display: inline-block;
+	color: #FDDC3F;
+	font-family: "Archivo black", sans-serif;
+	font-size: 14pt;
+}
+
+.navbar-brand li p {
+	color: #FDDC3F;
+	font-family: "Archivo black", sans-serif;
+	font-size: 18px; 
+}
+
+.container {
+	border-radius: 5px; 
+	background-color: #196969;
+	color: #FDDC3F;
+	font-family: "Archivo black", sans-serif;
+	font-size: 14pt; 
+}
+
+.navbar-nav p {
+	color: #FDDC3F;
+	font-family: "Archivo black", sans-serif;
+	font-size: 14pt; 
+}
+
+.img-thumbnail {
+	height: 200px;
+	width: 200px;
 	margin: 5px;
 	border: 1px solid #FDDC3F;
 }
@@ -85,7 +146,7 @@ img {
 
 h3 {
 	font-size : 16pt;
-	font-family: "Noto sans", sans-serif;
+	font-family: "Archivo black", sans-serif;
 	color: #196969;
 	font-weight: bold;
 	margin: 5px;
@@ -93,14 +154,8 @@ h3 {
 
 .artimg {
 	margin: 5px;
-	padding: 5px	;
+	padding: 5px;
 }
-
-/*.p1:first-letter {
-	font-size: 30pt;
-	font-family: "Noto sans", sans-serif;
-	color: #196969;
-}*/
 
 p {
 	font-family: "Noto sans", sans-serif;
@@ -114,34 +169,54 @@ p {
 	font-weight: bolder;
 }
 
-.colonnedroite {
+
+/*COLONNE DROITE*/
+
+.rowaside {
+	padding-bottom: 15px;
 }
 
-.twitter {
-
+.titreaside {
+	margin:auto;
 }
 
-.boutonsreseaux {
-	
+.boutontwitter {
+margin:auto;
 }
 
 .devenirplaider {
-	background-color: gray;
+	background-color: #9E9E9E;
 	border-radius: 5px; 
+	margin-top: 15px;
+	padding: 5px;
+	border-radius: 5px;
 }
 
 .idee {
-	background-color: gray;
-	border-radius: 5px;
+margin-top: 15px;
+padding: 10px;
 }
 
 .philo {
-	padding : 5px;
-	background-color: gray;
+	background-color: #196969;
+	opacity: 0.8;
 	border-radius: 5px;
+	padding: 10px;
+	margin-top: 15px;
+}
+
+.philo h3 {
+	color: #FDDC3F;
+	font-size: 19px;
+}
+
+.vide {
+	height:0px;
+	width:100%;
 }
 
 .footer {
+	display: block;
 	clear: both;
 	position: fixed;
 	display: inline;
@@ -175,14 +250,51 @@ p {
 	color : #196969;
 }
 
-.boutonjaune {
- 	/*font-family: "Noto sans", sans-serif;
+
+.kesako {
+ 	font-family: "Noto sans", sans-serif;
 	font-size: 16px;
-	color: black;*/
-	background-color: #686869; 
+	color: white;
+	background-color: #FDDC3F; 
  	border : none;
  	text-align: center;
- 	float: left;
+}
+
+.boutonref {
+ 	font-family: "Noto sans", sans-serif;
+	font-size: 16px;
+	color: white;
+	background-color: #196969; 
+ 	border : none;
+ 	text-align: center;
+ 	margin-top: 15px;
+}
+
+
+/*le bouton du footer*/
+body > footer > div > div > div.col-md-3 > button:hover a {
+	text-decoration: none;
+}
+
+body > footer > div > div > div.col-md-3 > button:hover {
+	background-color: #686869;
+}
+
+body > footer > div > div > div.col-md-3 > button:visited {
+	background-color: #686869;
+}
+
+/*le bouton kesako*/
+body > div > nav > div > div > aside > div.twitter > div> button:hover a {
+	text-decoration: none;
+}
+
+
+body > div > nav > div > div > aside > div.twitter > div > button:hover {
+	background-color: #686869;
+}
+body > div > nav > div > div > aside > div.twitter > div > button:visited {
+	background-color: #686869;
 }
 
 button p {
@@ -191,3 +303,16 @@ button p {
 	font-size: 16px;
 	font-weight: bolder; 
 }
+
+
+@media(max-width:960px) {
+	h1 {
+		font-size: 8rem; 
+	}
+}
+
+.container-navbar {
+	width: 87%;
+	background-color: none;
+}
+

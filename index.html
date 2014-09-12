@@ -18,7 +18,7 @@
 </head>
 
 <body>
-<div class="container-fluid">
+<div class="container-fluid wrapper">
 	<header>
 	<!--la div header-->
 	<div class="header">
@@ -35,23 +35,38 @@
 	</div>
 	</header> 
 
-	<nav>
-		<div class="nav">
-		<ul>
-			<div class="rubrique"><li>en mode plaid</li></div>
-			<div class="rubrique"><li>we are family</li></div>
-			<div class="rubrique"><li>plans lose</li></div>
-			<div class="rubrique"><li>#plaidfilter</li></div>
-			<div class="rubrique"><li>#devenirplaider</li></div>
+<nav>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid container-navbar">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><li><p>en mode plaid</p></li></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      	<ul class="nav navbar-nav">
+        	<li><a href="#"><p>we are family</p></a></li>
+        	<li><a href="#"><p>plans plaid</p></a></li>
+        	<li><a href="#"><p>#plaidfilter</p></a></li>
+        	<li><a href="#"><p>#devenirplaider</p></a></li>
 		</ul>
-		</div>
-	</nav>
+	</div>	
+</div>		
+</nav>
 
 <div class="row">
 	<section>
 		<!-- <div class="section">  -->
-				<div class="col-md-9">
-		
+				<div class="col-md-8">
+<!-- 				<div class="col-md-offset-0.5 col-md-8">  
+ -->		
 					<article>
 						<div class="sujets">
 							<!-- <div class="row"> -->
@@ -132,7 +147,7 @@
 
 		</section>
 
-		<div class="col-md-3">
+		<div class="col-md-4 colonnedroite">
 			
 			<aside>
 			<!-- <div class="colonnedroite"> -->
@@ -140,8 +155,14 @@
 					<!-- <div class="col-md-3"> -->
 			
 						<div class="twitter"> <!--la div consacrée à twitter-->
-							<h3>#plaidfilter</h3>
-							<button>késako ?</button>
+						<div class="row rowaside">
+							<div class="col-md-6 titreaside">
+								<h3>#plaidfilter</h3>
+							</div>
+							<div class="col-med-6 kesakoaside">
+								<button type="button" class="btn btn-primary btn-lg kesako">késako ?</button>
+							</div>
+						</div>
 							<a class="twitter-timeline" href="https://twitter.com/hashtag/plaidfilter" data-widget-id="509358082866966528">#plaidfilter Tweets</a>
 							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 						</div> 
@@ -158,35 +179,38 @@
 						</div>
 
 						<div class="devenirplaider"> <!--la div consacrée à devenir plaider-->
-							<h3>#devenir PLAIDER</h3>
-							<p>S'inscrire pour recevoir les nouveautés PLAID.</p>	
-							<form action="" method="post">
-			  					<label for="POST-name"><p>votre email</p></label>
-			  					<input id="POST-name" type="text" name="name">
-			  					<input type="submit" value="Je m'inscris">
-							</form>
-						</div>
-			
-						<div class="idee"> <!--la div consacrée aux idées-->
-							<h3>proposer une idée d'article</h3>
-							<i class="fa fa-hand-o-up fa-2x"></i> 
-							<button>"Je propose"</button>
+								<h3>#devenirplaider</h3>
+							<div class="email">
+								<p>S'inscrire pour recevoir les nouveautés PLAID.</p>	
+								<form action="" method="post">
+				  					<label for="POST-name"><p>votre email</p></label>
+				  					<input id="POST-name" type="text" name="name">
+				  					<input type="submit" value="Je m'inscris">
+								</form>
+							</div>
+				
+							<div class="idee"> <!--la div consacrée aux idées-->
+								<h3>proposer une idée d'article</h3>
+								<i class="fa fa-hand-o-up fa-2x"></i> 
+								<button>"Je propose"</button>
+							</div>
 						</div>
 
 						<div class="philo"> <!--la div consacrée à la philo-->
-							<p>Découvrir la philosophie PLAID</p>	
+							<h3>Découvrir la philosophie PLAID</h3>
 						</div>
 
 					<!-- </div> -->
 				<!-- </div> -->
-			</div>
+			
 		</aside>
 		</div> <!-- col-md-3 -->
 </div> <!-- fermeture row globale -->
-
+</div> <!-- fermeture de wrapper-->
 	<!--	</div>
 		</div>
 		</div> -->
+
 
 <footer>
 	<div class="footer">
@@ -202,20 +226,21 @@
 			</div>
 
 			<div class="col-md-3">		
-						<button type="button" class="btn btn-primary btn-lg boutonjaune">
-							<p>J'en ai une!</p>
+						<button type="button" class="btn btn-primary btn-lg boutonref">
+							<a href="#"><p>J'en ai une!</p></a>
 						</button>
 			</div>
 					<!-- </div>	 -->
 				</div>
 
 			</div>
-		</div>
+		
 	</div>
 </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script> type="text/javascript" src="scripts/global.js"></script>
 </body>
 </html>
