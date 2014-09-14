@@ -15,9 +15,9 @@ margin-left: 0px;
 	width: 100%;
 	padding : 2px;
 	background-image : url(img/pulljaune.png);
+	background-color: rgba(255, 255, 0, 0.5);
 	background-size: 100%;
 	background-repeat: no-repeat; 
-	/*opacity: 0.8;*/
 }
 
 /*.row {
@@ -35,6 +35,7 @@ h1 {
 	letter-spacing: 50px; 
 	text-align: center;	
 	color : #196969;
+	/*opacity :none;*/
 }
 
 
@@ -46,6 +47,7 @@ h2 {
 	padding-right: 69px;
 	margin-top: -26px;
 	text-align: center;
+	/*opacity: none;*/
 }
 
 #lose {
@@ -263,7 +265,7 @@ border-radius: 4px;
 color: #333;
 background-color: #fff;
 border-color: #ccc;
-margin-left: 36px;
+margin-left: 19px;
 }
 
 .jepropose:hover  {
