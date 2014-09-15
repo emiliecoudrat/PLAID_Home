@@ -50,14 +50,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html"><li><p>home</p></li></a>
+      <a class="navbar-brand" href="index.php"><li><p>home</p></li></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       	<ul class="nav navbar-nav">
         	<li><a href="article.html"><p>en mode plaid</p></a></li>
-        	<li><a href="#"><p>we are family</p></a></li>
+        	<li><a href="article.html"><p>we are family</p></a></li>
         	<li><a href="https://twitter.com/intent/tweet?hashtags=plaidfilter%2C&original_referer=&related=jasoncosta&share_with_retweet=never&text=My%20story%20is%20about%20what%27s%20happening%20today&tw_p=tweetbutton"><p>#plaidfilter</p></a></li>
         	<li><a href="#devenirplaider"><p>devenir plaider</p></a></li>
 		</ul>

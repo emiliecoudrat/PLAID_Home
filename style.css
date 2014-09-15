@@ -301,6 +301,7 @@ border-color: #adadad;
 	text-decoration: none;
 	background-color: none;
 	border-color: none;
+	outline: none;
 }
 
 .philo:focus {
@@ -311,15 +312,21 @@ border-color: #adadad;
 .philo:active {
 	outline: none;
 	border-color: none;
+	box-shadow: none;
 }
 
 .philo:hover {
 	background-color: #F2F2F2;
 	border-color: none;
+	outline: none;
+	box-shadow: none;
 }
 
 .philo:visited {
-	background-color: none;
+	background-color: #F2F2F2;
+	border-color: none;
+	outline: none;
+	box-shadow: none;
 }
 
 a:hover {
@@ -335,7 +342,6 @@ a:hover {
 }
 
 .footer {
-	display: block;
 	clear: both;
 	position: fixed;
 	display: inline;
@@ -446,25 +452,46 @@ body > footer > div > div > div.col-md-3 > button:visited {
 
 	.header {
 		height: 300px;
-	}
-	
+	}	
 }
 
-@media(max-width:400px) {
+@media(max-width:550px) {
 	h1 {
-		font-size: 4rem; 
-		text-align: center;
+		font-size: 5rem; 
+		float: left;
 		margin-bottom: 5px;
+		letter-spacing: 20px;
 	}
 
 	h2 {
 		font-size: 2rem;
-		text-align: center;
+		float: left;
 		margin-top: 5px;
+	}
+
+	.container-navbar {
+		width: 96%;
+	}
+
+	.navbar-nav li {
+		margin-left: 5px;
+	}
+
+	.footer {
+		height: 150px;
+		padding: 1px;
 	}
 
 	.header {
 		height: 200px;
+	}
+
+	.col-md-3 {
+		text-align: center;
+	}
+
+	.contact {
+	margin-bottom: 70px;
 	}
 }
 

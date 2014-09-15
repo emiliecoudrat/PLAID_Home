@@ -4,6 +4,7 @@ $(document).ready(function(){
   // $ ("#ModalPropalArticle").modal ({
   // 	; 
   //})
-	$('#kesako').popover('hover');
+	$('#kesako').popover();
+	$('#philo').popover();
 
 });

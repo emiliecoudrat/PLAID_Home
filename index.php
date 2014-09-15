@@ -20,7 +20,7 @@ include "header.php";
 
 										<div class="pull-right">
 											<div class="img">
-												<img src="img/Daniel Firman.png" alt="Daniel Firman" class="img-thumbnail borderjaune"/>
+												<img src="img/danielfirman.png" alt="Daniel Firman" class="img-thumbnail borderjaune"/>
 											</div>	
 										</div>
 
@@ -105,10 +105,7 @@ include "header.php";
 						<div class="col-md-6 kesakoaside">
 
 							<!-- le bouton késako -->
-
-									<button type="button" class="btn btn-default kesako" id="kesako" data-container="body" data-toggle="popover" data-placement="right" data-content="tweetez une photo à l'opposé des 'standards réseaux sociaux' accompagné de #plaidfilter. en bref, les doigts de pieds en éventail devant une mer turquoise ou les photos de dîner 'AMAZING' n'ont pas leur place ici. soyez simple et naturel. plaidement vôtre."> késako? </button>
-
-									<!-- <button type="button" class="btn btn-primary btn-lg kesako">késako ?</button> -->
+									<button type="button" class="btn btn-default kesako" id="kesako" data-container="body" data-toggle="popover" data-placement="top" data-content="Tweetez une photo dans l'esprit PLAID, autrement dit, à l'opposé des 'standards réseaux sociaux', accompagné du #plaidfilter. En bref, les doigts de pieds en éventail devant une mer turquoise ou les photos de dîner 'AMAAAAZING' n'ont pas leur place ici. Soyez simple et naturel, soyez PLAID."> késako? </button>
 						</div> 
 
 							<!-- la fenêtre live twitter -->
@@ -153,7 +150,7 @@ include "header.php";
 
 						<div class="philo"> <!--la div consacrée à la philo-->
 						
-						<button type="button" class="btn btn-default philo" data-container="body" data-toggle="popover" data-placement="right" data-content="la philosophie de PLAID, c'est juste d'être bon enfant."> <h3><span><i class="fa fa-angellist fa-2x"></i></span>  la philosophie PLAID</h3> </button>
+						<button type="button" class="btn btn-default philo" id="philo" data-container="body" data-toggle="popover" data-placement="top" data-content="la philosophie de PLAID, c'est juste d'être bon enfant.blablablablabla."> <h3><span><i class="fa fa-angellist fa-2x"></i></span>  la philosophie PLAID</h3> </button>
 								
 						</div>
 
@@ -181,25 +178,17 @@ include "header.php";
 				<div class="winner">
 					<span id="winnerdit"><p>C'est le winner qui l'a dit !</p></span>
 					<div class="citation"><p><em>"Ce qui ne nous tue pas, nous rend plus fort."</em></p></div>
-					<!-- <div class="propalwinner"> -->
-					<!-- <div class="pull-right"> -->
 				</div>	
 			</div>
 
 			<div class="col-md-3">		
-						<!-- <button type="button" class="btn btn-primary btn-lg boutonref">
-							<a href="#"><p>J'ai une citation de winner!</p></a>
-						</button> -->
 						<button class="btn btn-primary btn-lg boutonwinner" data-toggle="modal" data-target="#ModalPropalWinner">J'ai une citation de winner!</button>
 			</div>
-					<!-- </div>	 -->
-				</div>
-
-			</div>
-		
+		</div>
 	</div>
 </footer>
 
+<!-- MODALE POUR PROPOSER UN ARTICLE-->
 <div class="modal fade" id="ModalPropalArticle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 		<div class="modal-content">
@@ -218,7 +207,8 @@ include "header.php";
 		</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->					
-												
+							
+<!-- MODALE POUR PROPOSER UNE CITATION WINNER-->					
 <div class="modal fade" id="ModalPropalWinner" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 		<div class="modal-content">
