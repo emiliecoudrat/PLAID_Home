@@ -20,6 +20,9 @@ margin-left: 0px;
 	background-repeat: no-repeat; 
 }
 
+/*	linear-gradient (
+		rgba(255,255,0,0.5)
+*/
 /*.row {
 	margin-left	: none;
 	margin-right: none;
@@ -407,11 +410,9 @@ body > footer > div > div > div.col-md-3 > button:visited {
 	color: #196969;
 }
 
-/*.col-med-6 kesakoaside > button:visited {
-	background-color: #9E9E9E;
-	color: #196969;
-}
-*/
+/*.col-med-6.kesakoaside > button:visited {
+	outline: 5px auto #FDDC3F;
+}*/
 
 
 /*.boutonref {
