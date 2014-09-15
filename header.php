@@ -59,7 +59,7 @@
         	<li><a href="article.html"><p>en mode plaid</p></a></li>
         	<li><a href="#"><p>we are family</p></a></li>
         	<li><a href="https://twitter.com/intent/tweet?hashtags=plaidfilter%2C&original_referer=&related=jasoncosta&share_with_retweet=never&text=My%20story%20is%20about%20what%27s%20happening%20today&tw_p=tweetbutton"><p>#plaidfilter</p></a></li>
-        	<li><a href="#"><p>devenir plaider</p></a></li>
+        	<li><a href="#devenirplaider"><p>devenir plaider</p></a></li>
 		</ul>
 	</div>	
 </div>		

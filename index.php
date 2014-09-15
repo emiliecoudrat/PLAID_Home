@@ -102,11 +102,11 @@ include "header.php";
 						
 						<div class="col-md-6 titreaside"><h3>#plaidfilter</h3></div>
 						
-						<div class="col-med-6 kesakoaside">
+						<div class="col-md-6 kesakoaside">
 
 							<!-- le bouton késako -->
 
-									<button type="button" class="btn btn-default kesako" data-container="body" data-toggle="popover" data-placement="right" data-content="tweetez une photo à l'opposé des 'standards réseaux sociaux' accompagné de #plaidfilter. en bref, les doigts de pieds en éventail devant une mer turquoise ou les photos de dîner 'AMAZING' n'ont pas leur place ici. soyez simple et naturel. plaidement vôtre."> késako? </button>
+									<button type="button" class="btn btn-default kesako" id="kesako" data-container="body" data-toggle="popover" data-placement="right" data-content="tweetez une photo à l'opposé des 'standards réseaux sociaux' accompagné de #plaidfilter. en bref, les doigts de pieds en éventail devant une mer turquoise ou les photos de dîner 'AMAZING' n'ont pas leur place ici. soyez simple et naturel. plaidement vôtre."> késako? </button>
 
 									<!-- <button type="button" class="btn btn-primary btn-lg kesako">késako ?</button> -->
 						</div> 
@@ -127,7 +127,7 @@ include "header.php";
 							<!-- <div class"boutoninsta"></div> EN ATTENTE -->
 						
 
-						<div class="devenirplaider"> <!--la div consacrée à devenir plaider-->
+						<div class="devenirplaider" id="devenirplaider"> <!--la div consacrée à devenir plaider-->
 								<h3>devenir plaider</h3>
 								<p> </p>
 								<div class="email">
@@ -148,23 +148,6 @@ include "header.php";
 
 								<p><i class="fa fa-check-square-o"></i> Proposer une idée d'article.   <button class="btn btn-primary btn-lg jepropose" data-toggle="modal" data-target="#ModalPropalArticle">Je propose!</button></p>
 												
-									<div class="modal fade" id="ModalPropalArticle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  										<div class="modal-dialog">
-    										<div class="modal-content">
-      											<div class="modal-header">
-        											<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fermer</span></button>
-        											<h4 class="modal-title">Une idée de titre ?</h4>
-      											</div>
-      											<div class="modal-body">
-        											<p>Racontez-nous votre histoire...&hellip;</p>
-      											</div>
-      											<div class="modal-footer">
-        											<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-        											<button type="button" class="btn btn-primary">Valider</button>
-      											</div>
-    										</div><!-- /.modal-content -->
-  										</div><!-- /.modal-dialog -->
-									</div><!-- /.modal -->
 								</div> <!-- fermeture div idée -->
 						</div>
 
@@ -207,27 +190,7 @@ include "header.php";
 						<!-- <button type="button" class="btn btn-primary btn-lg boutonref">
 							<a href="#"><p>J'ai une citation de winner!</p></a>
 						</button> -->
-
 						<button class="btn btn-primary btn-lg boutonwinner" data-toggle="modal" data-target="#ModalPropalWinner">J'ai une citation de winner!</button>
-												
-									<div class="modal fade" id="ModalPropalWinner" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  										<div class="modal-dialog">
-    										<div class="modal-content">
-      											<div class="modal-body">
-        											<p>Votre citation de winner...&hellip;</p>
-      											</div>
-      											<div class="modal-footer">
-        											<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-        											<button type="button" class="btn btn-primary">Valider</button>
-      											</div>
-    										</div><!-- /.modal-content -->
-  										</div><!-- /.modal-dialog -->
-									</div><!-- /.modal -->
-
-
-
-
-
 			</div>
 					<!-- </div>	 -->
 				</div>
@@ -237,9 +200,42 @@ include "header.php";
 	</div>
 </footer>
 
+<div class="modal fade" id="ModalPropalArticle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fermer</span></button>
+					<h4 class="modal-title">Une idée de titre ?</h4>
+				</div>
+				<div class="modal-body">
+					<p>Racontez-nous votre histoire...&hellip;</p>
+				<!-- <input type="text"></input> -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+					<button type="submit" class="btn btn-primary">Valider</button>
+				</div>
+		</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->					
+												
+<div class="modal fade" id="ModalPropalWinner" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+				<div class="modal-body">
+				<p>Votre citation de winner...&hellip;</p>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+				<button type="button" class="btn btn-primary">Valider</button>
+				</div>
+		</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script> type="text/javascript" src="scripts/global.js"></script>
+    <script type="text/javascript" src="global.js"></script>
 </body>
 </html>

@@ -4,8 +4,6 @@ $(document).ready(function(){
   // $ ("#ModalPropalArticle").modal ({
   // 	; 
   //})
-$('#kesako').tooltip(options) ({
-	
-})
+	$('#kesako').popover('hover');
 
 });
