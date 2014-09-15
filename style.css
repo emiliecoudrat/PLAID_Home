@@ -178,10 +178,11 @@ h3 {
 
 .titreart {
 	margin-bottom: 15px; 
+	margin-top: 10px;
 }
 .artimg {
 	margin: 5px;
-	padding: 5px;
+	padding: 7px;
 }
 
 .p1:first-letter { 
@@ -211,11 +212,12 @@ p {
 
 .rowaside {
 	padding-bottom: 15px;
+	margin-top: 5px;
 }
 
 .colonnedroite {
-	margin-top: 15px;
-}
+/*	margin-top: 15px;
+*/}
 
 .titreaside {
 	margin:auto;
@@ -383,7 +385,7 @@ body > footer > div > div > div.col-md-3 > button:visited {
 }
 
 .kesakoaside {
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 }
 
 .kesako {
