@@ -1,8 +1,24 @@
+/*
+Theme Name: Thème PLAID
+Author: L'équipe PLAID
+Description: Thème original créé pour PLAID.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: thème, original, plaid
+*/
+
+
+/*DEBUT DE MON CSS*/
+
+body {
+	background-color: #F2F2F2;
+}
 
 .wrapper {
 background-color: #F2F2F2;
-padding-bottom: 90px;
-margin-left: 5px;
+/*padding-bottom: 90px;
+*/margin-left: 5px;
 }
 
 .row {
@@ -41,6 +57,15 @@ h1 {
 	/*opacity :none;*/
 }
 
+h1> a {
+	text-decoration: none;
+	color: #196969;
+}
+
+h1> a:hover {
+	color: #196969;
+}
+
 
 h2 {
 	font-family: "Archivo black", sans-serif;
@@ -63,7 +88,6 @@ li {
 	list-style : none;
 }
 
-
 .navbar-nav>li>a {
 	padding: 15px 15px;
 	height: 50px;
@@ -74,7 +98,7 @@ li {
 	display: inline-block;
 }
 
-.navbar-nav p {
+.navbar-default .navbar-nav>li>a {
 	color: #FDDC3F;
 	font-family: "Archivo black", sans-serif;
 	font-size: 18px;
@@ -90,69 +114,19 @@ li {
 	margin-bottom: 20px;
 }
 
-/*bouton home = navbar header */
-
-.navbar-header > a {
-	background-color: #9E9E9E;
-	border-radius: 5px; 
+.navbar-default a:hover {
+	color: #686869;
 }
 
-.navbar-header {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-/*le texte home*/
-
-.navbar-header > a > li > p {
-	color: white;
-}
-
-/*autres boutons = navbar collapse*/
-
-#bs-example-navbar-collapse-1 > ul > li:hover {
+.navbar-nav > li:hover {
 	background-color: #FDDC3F;
 	border-radius: 5px;
 	font-family: "Archivo black", sans-serif;
 	font-size: 18px;
 }
 
-#bs-example-navbar-collapse-1 > ul > li:hover a p {
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 	color: #686869;
-}
- 
-/* HOVER DE HOME */
-
- body > div > nav > nav > div > div.navbar-header:hover {
- 	/*background-color: #FDDC3F;*/
-	border-radius: 5px;
-	font-family: "Archivo black", sans-serif;
-	font-size: 18px;
- }
-
-.navbar-header:hover li p {
-	color: #FDDC3F;
-}
-
-.navbar-brand a {
-	border-radius: 5px; 
-	letter-spacing: 2px;
-	display: inline-block;
-	color: #FDDC3F;
-	font-family: "Archivo black", sans-serif;
-	font-size: 14pt;
-}
-
-.navbar-brand li p {
-	color: #FDDC3F;
-	font-family: "Archivo black", sans-serif;
-	font-size: 18px; 
-}
-
-.navbar-nav p {
-	color: #FDDC3F;
-	font-family: "Archivo black", sans-serif;
-	font-size: 14pt; 
 }
 
 .img-thumbnail {
@@ -196,8 +170,8 @@ p {
 	font-family: "Noto sans", sans-serif;
 	font-size: 14px;
 	color: #383838;
-	text-align: justify; 
-}
+/*	text-align: justify; 
+*/}
 
 .enmodeplaid {
 	color: #196969;
@@ -216,6 +190,8 @@ p {
 .rowaside {
 	padding-bottom: 15px;
 	margin-top: 5px;
+	padding-left: 0px;
+	margin-bottom: 80px;
 }
 
 .colonnedroite {
@@ -304,29 +280,10 @@ border-color: #adadad;
 	outline: none;
 }
 
-.philo:focus {
-	outline: none;
-	border-color: none; 
-}
-
-.philo:active {
-	outline: none;
-	border-color: none;
-	box-shadow: none;
-}
-
-.philo:hover {
+#philo {
 	background-color: #F2F2F2;
-	border-color: none;
-	outline: none;
 	box-shadow: none;
-}
-
-.philo:visited {
-	background-color: #F2F2F2;
-	border-color: none;
 	outline: none;
-	box-shadow: none;
 }
 
 a:hover {
@@ -381,18 +338,32 @@ a:hover {
 }
 
 /*hover du bouton winner*/
-body > footer > div > div > div.col-md-3 > button:hover a {
+/*body > footer > div > div > div.col-md-3 > button:hover a {
 	text-decoration: none;
-}
+}*/
 
 body > footer > div > div > div.col-md-3 > button:hover {
 	background-color: #686869;
+	text-decoration: none;
 }
 
 body > footer > div > div > div.col-md-3 > button:visited {
 	background-color: #686869;
+	box-shadow: none;
+	outline: none;
 }
 
+body > footer > div > div > div.col-md-3 > button:active {
+	background-color: #686869;
+	box-shadow: none;
+	outline: none;
+}
+
+body > footer > div > div > div.col-md-3 > button:focus {
+	background-color: #686869;
+	box-shadow: none;
+	outline: none;
+}
 .kesakoaside {
 	margin-bottom: 15px;
 }
@@ -410,36 +381,34 @@ body > footer > div > div > div.col-md-3 > button:visited {
 /*le hover du bouton kesako*/
 
 
-.col-med-6.kesakoaside > button:hover {
+.kesako:hover {
 	text-decoration: none;
 	background-color: #9E9E9E; 
 	color: #196969;
 }
 
-/*.col-med-6.kesakoaside > button:visited {
-	outline: 5px auto #FDDC3F;
-}*/
+.kesako:visited {
+	box-shadow: none;
+	outline: none;
+	background-color: #9E9E9E; 
+	color: #196969;
+}
+
+.kesako:active {
+	box-shadow: none;
+	outline: none;
+	background-color: #9E9E9E; 
+	color: #196969;
+}
+.kesako:focus {
+	box-shadow: none;
+	outline: none;
+	background-color: #9E9E9E; 
+	color: #196969;
+}
 
 
-/*.boutonref {
- 	font-family: "Noto sans", sans-serif;
-	font-size: 16px;
-	color: white;
-	background-color: #196969; 
- 	border : none;
- 	text-align: center;
- 	margin-top: 15px;
-}*/
-
-/*button p {
-	color: white ;
-	font-family: "Noto sans", sans-serif;
-	font-size: 16px;
-	font-weight: bolder; 
-}*/
-
-
-@media(max-width:960px) {
+/*@media(max-width:960px) {
 	h1 {
 		font-size: 8rem; 
 		margin-bottom: 5px;
@@ -453,9 +422,14 @@ body > footer > div > div > div.col-md-3 > button:visited {
 	.header {
 		height: 300px;
 	}	
-}
 
-@media(max-width:550px) {
+	.container-navbar {
+		width: 100%;
+	}
+
+}*/
+
+/*@media(max-width:550px) {
 	h1 {
 		font-size: 5rem; 
 		float: left;
@@ -491,9 +465,74 @@ body > footer > div > div > div.col-md-3 > button:visited {
 	}
 
 	.contact {
-	margin-bottom: 70px;
+		margin-bottom: 70px;
 	}
+}*/
+
+/*@media only screen and (min-width: 768px) {
+
+	h1 {
+		font-size: 8rem; 
+		margin-bottom: 5px;
+	}
+
+	h2 {
+		font-size: 3rem;
+		margin-top: 5px;
+	}
+
+	.header {
+		height: 300px;
+	}	
+
+	.container-navbar {
+		width: 100%;
+	}
+
 }
+
+@media only screen and (max-width: 767px) {
+	
+	h1 {
+		font-size: 5rem; 
+		float: left;
+		margin-bottom: 5px;
+		letter-spacing: 20px;
+	}
+
+	h2 {
+		font-size: 2rem;
+		float: left;
+		margin-top: 5px;
+	}
+
+	.container-navbar {
+		width: 96%;
+	}
+
+	.navbar-nav li {
+		margin-left: 5px;
+	}
+
+	.footer {
+		height: 150px;
+		padding: 1px;
+	}
+
+	.header {
+		height: 200px;
+	}
+
+	.col-md-3 {
+		text-align: center;
+	}
+
+	.contact {
+		margin-bottom: 70px;
+	}
+}*/
+
+/* CONTAINER */
 
 .container {
 	border-radius: 5px; 
@@ -511,3 +550,5 @@ body > footer > div > div > div.col-md-3 > button:visited {
 .container-fluid {
 	padding-left: 0px;
 }
+
+

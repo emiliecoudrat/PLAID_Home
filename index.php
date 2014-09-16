@@ -20,7 +20,7 @@ include "header.php";
 
 										<div class="pull-right">
 											<div class="img">
-												<img src="img/danielfirman.png" alt="Daniel Firman" class="img-thumbnail borderjaune"/>
+												<img src="<?php bloginfo('template_directory'); ?>/img/danielfirman.png" alt="Daniel Firman" class="img-thumbnail borderjaune"/>
 											</div>	
 										</div>
 
@@ -45,7 +45,7 @@ include "header.php";
 								
 									<div class="pull-right">
 										<div class="img">
-											<img src="img/metro.jpg" alt="Metro" class="img-thumbnail borderjaune"/>
+											<img src="<?php bloginfo('template_directory'); ?>/img/metro.jpg" alt="Metro" class="img-thumbnail borderjaune"/>
 										</div>
 									</div>
 
@@ -92,76 +92,14 @@ include "header.php";
 		</section>
 
 		<div class="col-md-4 colonnedroite">
+
+		<!-- MON ASIDE -->
+		
 			<aside>
-			<!-- <div class="colonnedroite"> -->
-				<!-- <div class="row"> -->
-					<!-- <div class="col-md-3"> -->
-			
-				<div class="twitter"> <!--la div consacrée à twitter-->
-					<div class="row rowaside"> <!-- row pour mettre #plaidfilter et kesako sur la meme ligne -->
-						
-						<div class="col-md-6 titreaside"><h3>#plaidfilter</h3></div>
-						
-						<div class="col-md-6 kesakoaside">
 
-							<!-- le bouton késako -->
-									<button type="button" class="btn btn-default kesako" id="kesako" data-container="body" data-toggle="popover" data-placement="top" data-content="Tweetez une photo dans l'esprit PLAID, autrement dit, à l'opposé des 'standards réseaux sociaux', accompagné du #plaidfilter. En bref, les doigts de pieds en éventail devant une mer turquoise ou les photos de dîner 'AMAAAAZING' n'ont pas leur place ici. Soyez simple et naturel, soyez PLAID."> késako? </button>
-						</div> 
-
-							<!-- la fenêtre live twitter -->
-								<a class="twitter-timeline" href="https://twitter.com/hashtag/plaidfilter" data-widget-id="509358082866966528">#plaidfilter Tweets</a>
-								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-						<div class="boutonsreseaux"> <!--la div consacrée aux boutons-->
-
-							<div class"boutontwitter"> 
-							<a href="https://twitter.com/intent/tweet?button_hashtag=plaidfilter&text=My%20story%20is%20about%20what's%20happening%20today" class="twitter-hashtag-button" data-lang="en" data-related="jasoncosta">Tweet #plaidfilter</a>
-							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-							</div>
-
-						</div>
-
-							<!-- <div class"boutoninsta"></div> EN ATTENTE -->
-						
-
-						<div class="devenirplaider" id="devenirplaider"> <!--la div consacrée à devenir plaider-->
-								<h3>devenir plaider</h3>
-								<p> </p>
-								<div class="email">
-									<p><i class="fa fa-check-square-o"></i> Être alerté des nouveautés PLAID.</p>	
-									<form class="form-inline" role="form">
-  										<div class="form-group">
-    										<label class="sr-only" for="exampleInputEmail2">mon email</label>
-    										<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
-    										<button type="submit" class="btn btn-default">Je m'inscris!</button>
-  										</div>
-  									</form>
-
-								</div>
-				
-								<div class="idee"> <!--la div consacrée aux idées-->
-
-								<!-- Bouton pour lancer modal -->
-
-								<p><i class="fa fa-check-square-o"></i> Proposer une idée d'article.   <button class="btn btn-primary btn-lg jepropose" data-toggle="modal" data-target="#ModalPropalArticle">Je propose!</button></p>
-												
-								</div> <!-- fermeture div idée -->
-						</div>
-
-						<div class="philo"> <!--la div consacrée à la philo-->
-						
-						<button type="button" class="btn btn-default philo" id="philo" data-container="body" data-toggle="popover" data-placement="top" data-content="la philosophie de PLAID, c'est juste d'être bon enfant.blablablablabla."> <h3><span><i class="fa fa-angellist fa-2x"></i></span>  la philosophie PLAID</h3> </button>
-								
-						</div>
-
-						<div class="contact"> <!--la div consacrée au contact-->
-							<a href="mailto:coudrat.emilie@gmail.com"> <!-- A CHANGER -->
-							<h3><span><i class="fa fa-envelope fa-2x"></i></span> nous contacter</h3>
-							</a>
-						</div>
-
-					</div> <!-- fermeture div class rowaside -->
-				</div> <!-- fermeture de la div class twitter -->
+				<ul class="rowaside">
+   					<?php dynamic_sidebar( 'Main Sidebar' ); ?>
+				</ul>
 			
 			</aside>
 		</div> <!-- col-md-4 -->
@@ -169,63 +107,4 @@ include "header.php";
 	</div> <!-- fermeture row globale -->
 </div> <!-- fermeture de wrapper-->
 	
-
-<footer>
-	<div class="footer">
-		<div class="row">
-			<div class="col-md-9">
-
-				<div class="winner">
-					<span id="winnerdit"><p>C'est le winner qui l'a dit !</p></span>
-					<div class="citation"><p><em>"Ce qui ne nous tue pas, nous rend plus fort."</em></p></div>
-				</div>	
-			</div>
-
-			<div class="col-md-3">		
-						<button class="btn btn-primary btn-lg boutonwinner" data-toggle="modal" data-target="#ModalPropalWinner">J'ai une citation de winner!</button>
-			</div>
-		</div>
-	</div>
-</footer>
-
-<!-- MODALE POUR PROPOSER UN ARTICLE-->
-<div class="modal fade" id="ModalPropalArticle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-		<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fermer</span></button>
-					<h4 class="modal-title">Une idée de titre ?</h4>
-				</div>
-				<div class="modal-body">
-					<p>Racontez-nous votre histoire...&hellip;</p>
-				<!-- <input type="text"></input> -->
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-					<button type="submit" class="btn btn-primary">Valider</button>
-				</div>
-		</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->					
-							
-<!-- MODALE POUR PROPOSER UNE CITATION WINNER-->					
-<div class="modal fade" id="ModalPropalWinner" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-		<div class="modal-content">
-				<div class="modal-body">
-				<p>Votre citation de winner...&hellip;</p>
-				</div>
-				<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-				<button type="button" class="btn btn-primary">Valider</button>
-				</div>
-		</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="global.js"></script>
-</body>
-</html>
+<?php get_footer(); ?>
