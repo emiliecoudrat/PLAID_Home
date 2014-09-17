@@ -32,7 +32,7 @@ get_header();
 
 
  			<?php if (have_posts()) : ?>
- 				<?php query_posts('showposts=1') ?>
+ 				<?php query_posts('showposts=3') ?>
    				<?php while (have_posts()) : the_post(); ?>
    					<div class="sujets">
    					<div class="titreart"><h3><?php the_title(); ?></h3></div>
