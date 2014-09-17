@@ -7,11 +7,11 @@ add_theme_support( 'post-thumbnails' );
 
 // Ajouter un lien en dessous des excertp un lien "read more"
 
-function excerpt_read_more_link($output) {
-  global $post;
-  return $output . '<a href="'. get_permalink($post->ID) . '"> Read more...</a>';
-}
-add_filter('the_excerpt', 'excerpt_read_more_link');
+// function excerpt_read_more_link($output) {
+//   global $post;
+//   return $output . '<a href="'. get_permalink($post->ID) . '"> Read more...</a>';
+// }
+// add_filter('the_excerpt', 'excerpt_read_more_link');
 
 //bootstrap nav
 

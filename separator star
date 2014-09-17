@@ -1,0 +1,55 @@
+ 
+STAR SEPARATOR 
+
+ <div class="star">
+  <span><i class="fa fa-star yellow"></i></span>
+</div>
+
+
+/* SPERATOR STAR */
+.yellow {
+  color: #4ecdc4;
+  font-size: 40px;
+}
+
+/*STAR SEPARATOR */
+/* line 98, sass/style.scss */
+.star {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* line 104, sass/style.scss */
+.star {
+  line-height: 0.5;
+}
+
+/* line 107, sass/style.scss */
+.star span {
+  display: inline-block;
+  position: relative;
+}
+
+/* line 111, sass/style.scss */
+.star span::before, .star span::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 5px;
+  border-top: 1px solid #f8ca00;
+  border-bottom: 1px solid #f8ca00;
+  top: 40%;
+}
+
+/* line 120, sass/style.scss */
+.star span::before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+/* line 125, sass/style.scss */
+.star span::after {
+  left: 100%;
+  margin-left: 15px;
+}

@@ -9,7 +9,7 @@ Tags: thème, original, plaid
 */
 
 
-/*DEBUT DE MON CSS*/
+/*# DEBUT DE MON CSS*/
 
 body {
 	background-color: #F2F2F2;
@@ -32,21 +32,26 @@ margin-left: 0px;
 	padding : 2px;
 	background-image : url(img/pulljaune.png);
 	background-color: rgba(255, 255, 0, 0.5);
-	background-size: 100%;
+	/*background-size: 100%;*/
 	background-repeat: no-repeat; 
+	background-size: cover; 
+	position: relative;
 }
 
-/*	linear-gradient (
-		rgba(255,255,0,0.5)
-*/
-/*.row {
-	margin-left	: none;
-	margin-right: none;
+.header .mask  {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	opacity: 0.2;
 }
-*/
-/*.titres {
-	margin: auto;
-}*/
+
+.header .mask .background-image {
+	max-width: 100%;
+	padding: 5px;
+}
 
 h1 {
 	font-family: "Archivo black", sans-serif; 
@@ -54,7 +59,6 @@ h1 {
 	letter-spacing: 50px; 
 	text-align: center;	
 	color : #196969;
-	/*opacity :none;*/
 }
 
 h1> a {
@@ -75,7 +79,6 @@ h2 {
 	padding-right: 69px;
 	margin-top: -26px;
 	text-align: center;
-	/*opacity: none;*/
 }
 
 #lose {
@@ -129,20 +132,59 @@ li {
 	color: #686869;
 }
 
-.img-thumbnail {
+/*.img-thumbnail {
 	height: 300px;
 	width: 300px;
-	margin: 5px;
-	border: 1px solid #FDDC3F;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	border: 2px solid #FDDC3F; 
+}*/
+
+figure.img  {
+	position: relative;
+	border: 2px solid #FDDC3F;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	border-radius: 2px;
+	margin-top: 5px;
 }
+
+figure.img .mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FDDC3F;
+	opacity: 0.1;
+}
+
+figure.img img {
+	max-width: 100%;
+	padding: 5px;
+}
+
+
+/* TENTATIVE DE FILTRE 
+
+.backgroundimg {
+	position: relative;
+}
+
+.mask {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,255,0.5);
+}
+
+.backgroundimg mask {width:100%};*/
+
 
 .borderjaune {
 	border: 1px solid #FDDC3F;
 	padding: 2px;
-}
-
-.section {
-
 }
 
 h3 {
@@ -157,6 +199,7 @@ h3 {
 	margin-bottom: 15px; 
 	margin-top: 10px;
 }
+
 .artimg {
 	margin: 5px;
 	padding: 7px;
@@ -170,8 +213,8 @@ p {
 	font-family: "Noto sans", sans-serif;
 	font-size: 14px;
 	color: #383838;
-/*	text-align: justify; 
-*/}
+	text-align: justify;
+}
 
 .enmodeplaid {
 	color: #196969;
@@ -180,10 +223,70 @@ p {
 	font-family:"Archivo black" sans-serif;
 }
 
-.lirelasuite {
-	background-color: #196969;
-	color: white;
+div.article > p > a {
+	color: #196969;
 }
+
+/******* STAR SEPARATOR ******/
+
+.star {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  color: #196969;
+  font-size: 25px;
+}
+
+.star {
+  line-height: 1;
+}
+
+.star span {
+  display: inline-block;
+  position: relative;
+}
+
+.star span::before, .star span::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 10px;
+  border-top: 2px solid #FDDC3F;
+  border-bottom: 2px solid #FDDC3F;
+  top: 40%;
+}
+
+.star span::before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.star span::after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+/* END STAR SEPARATOR */
+
+/* STAR SIMPLE */
+
+.staronly {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  color: #FDDC3F;
+  font-size: 20px;
+}
+
+.staronly {
+  line-height: 1;
+}
+
+.staronly span {
+  display: inline-block;
+  position: relative;
+}
+
 
 /*COLONNE DROITE*/
 
@@ -209,8 +312,8 @@ margin:auto;
 .devenirplaider {
 	background-color: #FDDC3F;
 	border-radius: 5px; 
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	padding: 5px;
 	border-radius: 5px;
 	opacity: 0.9;
@@ -227,6 +330,10 @@ position : right;
 .idee {
 	margin-top: 5px;
 	padding: 10px;
+}
+
+.idee > p {
+	text-align: left;
 }
 
 .jepropose {
@@ -267,15 +374,10 @@ border-color: #adadad;
 	border: none;
 }
 
-/*.philo h3 {
-	color: #FDDC3F;
-	font-size: 19px;
-}*/
-
 .philo h3:hover {
 	color: #FDDC3F;
 	text-decoration: none;
-	background-color: none;
+	background-color: transparent;
 	border-color: none;
 	outline: none;
 }
@@ -407,6 +509,46 @@ body > footer > div > div > div.col-md-3 > button:focus {
 	color: #196969;
 }
 
+.popover.top {
+	color: #686869;
+	background-color: #FDDC3F; 
+	} 
+
+
+
+/*--------------------------
+--------------------------
+	MEDIAQUERY	
+--------------------------
+--------------------------*/
+
+@media (max-width:320px) {  /*small mobile*/
+  {
+  
+  }
+}
+@media (min-width:920px) and (max-width:1000px) {  /*tablet*/
+	.footer {
+		height: 130px;
+		padding: 1px;
+	}  
+	.col-md-3 {
+		text-align: center;
+	}
+  }
+
+@media (min-width:1000px) and (max-width:1599px) {  /*desktop*/
+ 		
+  }
+
+@media (min-width: 768px) { /*pour défaire un bootstrap*/
+	.navbar-header,
+	.navbar-nav {
+		float: none;
+	}
+}
+
+
 
 /*@media(max-width:960px) {
 	h1 {
@@ -532,23 +674,34 @@ body > footer > div > div > div.col-md-3 > button:focus {
 	}
 }*/
 
-/* CONTAINER */
+
+
+/*--------------------------
+--------------------------
+       CONTAINER 
+--------------------------
+--------------------------*/
 
 .container {
 	border-radius: 5px; 
-	background-color: #196969;
+	background-color: #FFF163;
 	color: #FDDC3F;
 	font-family: "Archivo black", sans-serif;
 	font-size: 14pt; 
 }
 
 .container-navbar {
-	width: 79%;
+	width: 100%;
 	background-color: none;
+	text-align: center;
 }
 
-.container-fluid {
-	padding-left: 0px;
+.navbar-header {
+	display: inline-block;
 }
+
+/*.container-fluid {
+	padding-left: 0px;#196969
+}*/
 
 
