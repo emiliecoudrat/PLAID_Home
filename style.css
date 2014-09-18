@@ -319,6 +319,20 @@ margin:auto;
 	opacity: 0.9;
 }
 
+.fa-bolt {
+	color: #196969;
+	font-size: 20px;
+}
+
+.fa-pencil {
+	color: #196969;
+	font-size: 20px;
+}
+
+#comment {
+	border: 1px solid #196969;
+	border-radius: 5px;
+}
 .email {
 position : right;
 }
@@ -366,6 +380,18 @@ border-color: #adadad;
 	padding: 10px;
 }
 
+label {
+	display:none;
+}
+
+#searchsubmit {
+	background-color: #196969;
+	color: white;
+	font-family: "Noto sans", sans-serif;
+	font-size: 14px;
+	border: none;
+}
+
 .philo {
 	background-color: #F2F2F2;
 	border-radius: 0px;
@@ -399,6 +425,29 @@ a:hover {
 .contact a h3:hover {
 	color: #FDDC3F;
 }
+
+
+/*/////////////PLUG IN/////////////*/
+
+#respond {
+	margin-top: 30px;
+}
+
+#reply-title {
+	font-size: 15px;
+	margin-left: 0px;
+	margin-bottom: 10px;
+	font-style: italic;
+}
+
+#submit {
+	background-color: #FDDC3F;
+	color: #196969;
+	border: none;
+	border-radius: 5px;
+}
+
+/*/////////////FOOTER/////////////*/
 
 .footer {
 	clear: both;
@@ -711,6 +760,59 @@ body > footer > div > div > div.col-md-3 > button:focus {
 
 /*--------------------------
 --------------------------
+       404 
+--------------------------
+--------------------------*/
+
+.img404 {
+	background-image : url(img/champagne.jpg);
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	position: relative;
+	border-radius: 3px;
+	padding: 10px;
+	margin : 20px;
+}
+
+.img404 h1 h2 {
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.img404 h1 {
+	letter-spacing: 28px;
+	text-align: left;
+}
+
+.img404 h2 {
+	text-align: left;
+	letter-spacing: 6px;
+	font-size: 27px;
+}
+
+#plaid404 {
+	font-style: italic;
+	font-size: 40px;
+}
+
+.header .mask  {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	opacity: 0.1;
+}
+
+.header .mask .background-image {
+	max-width: 100%;
+	padding: 5px;
+}
+
+
+/*--------------------------
+--------------------------
        CONTAINER 
 --------------------------
 --------------------------*/
@@ -731,6 +833,10 @@ body > footer > div > div > div.col-md-3 > button:focus {
 
 .navbar-header {
 	display: inline-block;
+}
+
+.col-md-8 {
+	margin-bottom: 80px;
 }
 
 /*.container-fluid {

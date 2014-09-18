@@ -36,8 +36,8 @@
               </p>
 
               <div>
-              <?php comments_template('/comments.php', true); ?>
-       				</div>
+              <?php comments_template('/comments.php', true); ?>      
+              </div>
 
               <div class="star">
               	<span><i class="fa fa-star yellow"></i></span>
@@ -49,7 +49,7 @@
 
        	  <?php endwhile; ?>
       <?php endif; ?>
-  
+
     </div>
   </section>
 

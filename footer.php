@@ -24,15 +24,12 @@
 		<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fermer</span></button>
-					<h4 class="modal-title">Une idée de titre ?</h4>
 				</div>
 				<div class="modal-body">
-					<p>Racontez-nous votre histoire...&hellip;</p>
+					<!-- <p>Racontez-nous votre histoire...&hellip;</p> -->
+					<?php $widgetNL = new WYSIJA_NL_Widget(true);
+					echo $widgetNL->widget(array('form' => 3, 'form_type' => 'php'));?>
 				<!-- <input type="text"></input> -->
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-					<button type="submit" class="btn btn-primary">Valider</button>
 				</div>
 		</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
@@ -43,11 +40,10 @@
 		<div class="modal-dialog">
 		<div class="modal-content">
 				<div class="modal-body">
-				<p>Votre citation de winner...&hellip;</p>
+				<!-- <p>Votre citation de winner...&hellip;</p> -->
+				<?php $widgetNL = new WYSIJA_NL_Widget(true);
+echo $widgetNL->widget(array('form' => 4, 'form_type' => 'php'));?>
 				</div>
-				<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-				<button type="button" class="btn btn-primary">Valider</button>
 				</div>
 		</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->

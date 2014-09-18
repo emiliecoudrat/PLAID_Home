@@ -1,12 +1,12 @@
 <?php // You can start editing here -- including this comment! ?>
 
   <?php if ( have_comments() ) : ?>
-    <h2 class="comments-title">
+    <!-- <h2 class="comments-title">
       <?php
         printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'twentytwelve' ),
           number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
       ?>
-    </h2>
+    </h2> -->
 
     <ol class="commentlist">
       <?php wp_list_comments( array('style' => 'ol' ) ); ?>
@@ -30,4 +30,14 @@
 
   <?php endif; // have_comments() ?>
 
-<?php comment_form(); ?>
+<?php comment_form(array(
+  'id_form'           => 'commentform',
+  'id_submit'         => 'submit',
+  'title_reply'       => __( 'Un petit commentaire pour la route!' ),
+  'title_reply_to'    => __( 'Leave a Reply to %s' ),
+  'cancel_reply_link' => __( 'Cancel Reply' ),
+  'label_submit'      => __( 'OK' ),
+  'comment_notes_after' => false,
+  'logged_in_as' => false,
+  )
+  ); ?>
