@@ -16,14 +16,14 @@ body {
 }
 
 .wrapper {
-background-color: #F2F2F2;
-/*padding-bottom: 90px;
-*/margin-left: 5px;
+	background-color: #F2F2F2;
+	/*padding-bottom: 90px;*/	
+	margin-left: 5px;
 }
 
 .row {
-margin-right: 0px;
-margin-left: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
 }
 
 .header {
@@ -393,7 +393,7 @@ a:hover {
 }
 .contact {
 	margin-top:	30px ;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .contact a h3:hover {
@@ -568,6 +568,9 @@ body > footer > div > div > div.col-md-3 > button:focus {
 		text-align: left;
 	}
 
+/*	#wpadminbar {
+		padding-bottom: 30px;
+	}*/
 	.contact {
 		margin-bottom: 70px;
 	}
@@ -705,134 +708,6 @@ body > footer > div > div > div.col-md-3 > button:focus {
 		float: none;
 	}
 }
-
-
-
-/*@media(max-width:960px) {
-	h1 {
-		font-size: 8rem; 
-		margin-bottom: 5px;
-	}
-
-	h2 {
-		font-size: 3rem;
-		margin-top: 5px;
-	}
-
-	.header {
-		height: 300px;
-	}	
-
-	.container-navbar {
-		width: 100%;
-	}
-
-}*/
-
-/*@media(max-width:550px) {
-	h1 {
-		font-size: 5rem; 
-		float: left;
-		margin-bottom: 5px;
-		letter-spacing: 20px;
-	}
-
-	h2 {
-		font-size: 2rem;
-		float: left;
-		margin-top: 5px;
-	}
-
-	.container-navbar {
-		width: 96%;
-	}
-
-	.navbar-nav li {
-		margin-left: 5px;
-	}
-
-	.footer {
-		height: 150px;
-		padding: 1px;
-	}
-
-	.header {
-		height: 200px;
-	}
-
-	.col-md-3 {
-		text-align: center;
-	}
-
-	.contact {
-		margin-bottom: 70px;
-	}
-}*/
-
-/*@media only screen and (min-width: 768px) {
-
-	h1 {
-		font-size: 8rem; 
-		margin-bottom: 5px;
-	}
-
-	h2 {
-		font-size: 3rem;
-		margin-top: 5px;
-	}
-
-	.header {
-		height: 300px;
-	}	
-
-	.container-navbar {
-		width: 100%;
-	}
-
-}
-
-@media only screen and (max-width: 767px) {
-	
-	h1 {
-		font-size: 5rem; 
-		float: left;
-		margin-bottom: 5px;
-		letter-spacing: 20px;
-	}
-
-	h2 {
-		font-size: 2rem;
-		float: left;
-		margin-top: 5px;
-	}
-
-	.container-navbar {
-		width: 96%;
-	}
-
-	.navbar-nav li {
-		margin-left: 5px;
-	}
-
-	.footer {
-		height: 150px;
-		padding: 1px;
-	}
-
-	.header {
-		height: 200px;
-	}
-
-	.col-md-3 {
-		text-align: center;
-	}
-
-	.contact {
-		margin-bottom: 70px;
-	}
-}*/
-
-
 
 /*--------------------------
 --------------------------
