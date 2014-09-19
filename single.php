@@ -27,6 +27,8 @@
        					<?php the_content(); ?>
        				</div>
 
+              <div class="addthis_sharing_toolbox"></div>
+
               <div class="date">
                 <?php the_date(); ?>
               </div>

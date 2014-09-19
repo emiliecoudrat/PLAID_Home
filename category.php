@@ -46,6 +46,9 @@
 
    	  <?php endwhile; ?>
   <?php endif; ?>
+
+     <?php wp_link_pages(); ?>    
+
 </div>
 </section>
 

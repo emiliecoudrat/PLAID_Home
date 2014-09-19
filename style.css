@@ -61,6 +61,14 @@ h1 {
 	color : #196969;
 }
 
+/*#titrehome {
+	font-family: "Archivo black", sans-serif; 
+	font-size : 200px;
+	letter-spacing: 50px; 
+	text-align: center;	
+	color : #196969;
+}*/
+
 h1> a {
 	text-decoration: none;
 	color: #196969;
@@ -130,6 +138,13 @@ li {
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 	color: #686869;
+}
+
+.container-fluid.wrapper > nav > div > div > button {
+	background-color: #FDDC3F;
+	border: 3px solid transparent;
+	border-color: #ddd;
+	margin-bottom: 5px;
 }
 
 /*.img-thumbnail {
@@ -203,6 +218,7 @@ h3 {
 .artimg {
 	margin: 5px;
 	padding: 7px;
+	margin-top: 0px;
 }
 
 .p1:first-letter { 
@@ -429,6 +445,9 @@ a:hover {
 
 /*/////////////PLUG IN/////////////*/
 
+
+/*Les commentaires*/
+
 #respond {
 	margin-top: 30px;
 }
@@ -445,6 +464,57 @@ a:hover {
 	color: #196969;
 	border: none;
 	border-radius: 5px;
+}
+
+.vcard {
+	font-family: "Noto sans", sans-serif;
+	font-size: 14px;
+	color: #383838;
+}
+
+.commentmetadata p {
+	font-family: "Noto sans", sans-serif;
+	font-size: 14px;
+	color: #383838;
+}
+
+.commentmetadata a {
+	font-family: "Noto sans", sans-serif;
+	font-size: 14px;
+	color: #196969;
+}
+
+.reply a {
+	font-family: "Noto sans", sans-serif;
+	font-size: 14px;
+	color: #196969;
+}
+
+.comment-body {
+	padding-top: 20px;
+}
+
+.post-info p {
+	font-family: "Noto sans", sans-serif;
+	font-size: 14px;
+	color: #196969;
+}
+
+.post-info a {
+	font-family: "Noto sans", sans-serif;
+	font-size: 14px;
+	color: #EBCC3A;
+}
+
+.date {
+	font-family: "Noto sans", sans-serif;
+	font-size: 14px;
+	color: #196969;
+}
+
+#atstbx {
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 /*/////////////FOOTER/////////////*/
@@ -571,7 +641,7 @@ body > footer > div > div > div.col-md-3 > button:focus {
 --------------------------
 --------------------------*/
 
-@media (min-width: 400px) and (max-width:545px) { 
+@media (min-width: 350px) and (max-width:545px) { 
   	h1 {
 		font-size: 6rem; 
 		text-align: center;
@@ -698,7 +768,28 @@ body > footer > div > div > div.col-md-3 > button:focus {
 	}
 }
 
-@media (min-width: 920px) and (max-width:960px) {
+@media (min-width: 750px) and (max-width: 960px) {
+
+	.navbar-header {
+		width: 100%;
+	}
+
+	.container-navbar {
+		width: 85%;
+		text-align: center;
+	}
+
+	.navbar-nav li {
+		margin-left: 1%;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		font-size: 14px;
+	}
+}
+
+
+@media (min-width: 920px) and (max-width: 960px) {
 	
 	.footer {
 		height: 130px;
@@ -777,10 +868,11 @@ body > footer > div > div > div.col-md-3 > button:focus {
 .img404 h1 h2 {
 	text-align: left;
 	margin-bottom: 10px;
+	margin-left: 15px;
 }
 
 .img404 h1 {
-	letter-spacing: 28px;
+	letter-spacing: 20px;
 	text-align: left;
 }
 

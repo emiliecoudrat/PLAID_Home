@@ -6,7 +6,6 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<!-- <title><?php echo $title; ?></title> -->
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
-	<meta name="description" content="<?php echo $meta_description; ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	
@@ -18,6 +17,11 @@
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+	<!-- script add this pour boutons réseaux sociaux de partage  -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-541c073a04311560"></script>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-541c073a04311560"></script>
 
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>" type="text/css" />
